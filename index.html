@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm2Table - Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        /* Custom CSS starts here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            border-bottom: 1px solid #dee2e6;
+            
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .carousel-caption h5 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .carousel-caption p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .carousel-caption a.btn {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .input-group {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #6c757d;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer a:hover {
+            color: #007bff;
+        }
+
+        .how-it-works .step-icon {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .testimonial {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .testimonial strong {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        .how-it-works img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+        /* Custom CSS ends here */
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <a class="navbar-brand" href="#">Farm2Table</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Aboutus.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="BrowseProducts2.html">Browse Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Register.html">Signup</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+     <!-- Main Section -->
+    <div class="container mt-4">
+        <div class="jumbotron text-center ">
+            <h1 class="display-4">Welcome to Farm2Table</h1>
+            <p class="lead">Shop Fresh Local Produce</p>
+            <a class="btn btn-primary btn-lg" href="BrowseProducts2.html" role="button">Browse Products</a>
+        </div>
+        
+        <!-- Search Bar -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-8">
+                <input type="text" class="form-control" placeholder="Search for products...">
+            </div>
+        </div>
+
+        <!-- Categories -->
+        <h3>Categories</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="image/bananas.jpg" class="card-img-top" alt="Fruits">
+                    <div class="card-body">
+                        <h5 class="card-title">Fruits</h5>
+                        <a href="BrowseProducts2.html" class="btn btn-primary">Browse</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="image/vegetables.jpg" class="card-img-top" alt="Vegetables">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegetables</h5>
+                        <a href="BrowseProducts2.html" class="btn btn-primary">Browse</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="image/dairyfarm.jpg" class="card-img-top" alt="Dairy">
+                    <div class="card-body">
+                        <h5 class="card-title">Dairy</h5>
+                        <a href="BrowseProducts2.html" class="btn btn-primary">Browse</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="image/beef.jpg" class="card-img-top" alt="Meat">
+                    <div class="card-body">
+                        <h5 class="card-title">Meat</h5>
+                        <a href="BrowseProducts2.html" class="btn btn-primary">Browse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Feature Carousel -->
+        <h3 class="mt-4">Featured Products</h3>
+        <div id="productCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="image/onion.jpg" class="card-img-top" alt="Product 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">onion</h5>
+                                    <p class="card-text">$10.00</p>
+                                    <a href="ShoppingCart.html" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="image/tomatoes3.jpg" class="card-img-top" alt="Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tomatoes</h5>
+                                    <p class="card-text">$15.00</p>
+                                    <a href="ShoppingCart.html" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="image/beef.jpg" class="card-img-top" alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Beef</h5>
+                                    <p class="card-text">$20.00</p>
+                                    <a href="ShoppingCart.html" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="image/vegetables.jpg" class="card-img-top" alt="Product 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vegetables</h5>
+                                    <p class="card-text">$25.00</p>
+                                    <a href="ShoppingCart.html" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="image/dairyfarm.jpg" class="card-img-top" alt="Product 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Diaryfarm</h5>
+                                    <p class="card-text">$10.00</p>
+                                    <a href="ShoppingCart.html" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="image/tomatoes3.jpg" class="card-img-top" alt="Product 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tomatoes</h5>
+                                    <p class="card-text">$15.00</p>
+                                    <a href="ShoppingCart.html" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="image/onion.jpg" class="card-img-top" alt="Product 7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Onion</h5>
+                                    <p class="card-text">$20.00</p>
+                                    <a href="ShoppingCart.html" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="image/beef.jpg" class="card-img-top" alt="Product 8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Beef</h5>
+                                    <p class="card-text">$25.00</p>
+                                    <a href="ShoppingCart.html" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- How It Works -->
+    <div class="container mt-5 how-it-works">
+        <h2 class="text-center">How It Works</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-search step-icon"></i>
+                <h4>Step 1</h4>
+                <p>Choose your products from our wide selection of fresh produce.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-shopping-cart step-icon"></i>
+                <h4>Step 2</h4>
+                <p>Place your order and choose a delivery time that suits you.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-truck step-icon"></i>
+                <h4>Step 3</h4>
+                <p>Receive your fresh produce right at your doorstep.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="container mt-5">
+        <h2 class="text-center">Testimonials</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <p>"Farm2Table has revolutionized the way I buy groceries. The produce is always fresh and the delivery is prompt. Highly recommended!"</p>
+                    <p><strong>florence emeka</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <p>"I love the variety of products available. It's great to support local farmers and get high-quality produce delivered to my home."</p>
+                    <p><strong>dami lola</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <p>"The convenience of ordering online and having fresh produce delivered is amazing. The quality is always top-notch."</p>
+                    <p><strong>chioma charles</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="container mt-5 text-center">
+        <h2>Get Started with Farm2Table Today!</h2>
+        <p>Sign up now to enjoy the freshest produce delivered straight to your home.</p>
+        <a href="Register.html" class="btn btn-primary btn-lg">Sign Up Now</a>
+    </div>
+   
+
+<!-- Contact Us Section -->
+    <div class="contact-section text-center mt-5">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+
+                    <div class="contact-details mt-5">
+                        <p><i class="fas fa-phone-alt"></i> +2348037018038</p>
+                        <p><i class="fas fa-envelope"></i> contact@farm2table.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 145 ijesha road surulere St, lagos nigeria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4 mt-4">
+        <p>&copy; 2024 Farm2Table. All rights reserved.</p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> 
+        <a href="#"><i class="fab fa-facebook"></i></a> 
+        <a href="#"><i class="fab fa-twitter"></i></a> 
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

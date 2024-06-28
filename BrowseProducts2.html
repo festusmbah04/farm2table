@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm2Table - Browse Products</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        /* Custom CSS starts here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 4.5rem; /* Adjusted for navbar height */
+        }
+
+        .navbar {
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+        }
+
+        .card {
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+
+        .pagination {
+            justify-content: center;
+        }
+
+        footer {
+            color: #6c757d;
+            font-size: 0.9rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+        }
+
+        .filters {
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #ffffff;
+        }
+
+        .filters h5 {
+            margin-bottom: 20px;
+        }
+
+        /* Custom CSS ends here */
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top">
+        <a class="navbar-brand" href="#">Farm2Table</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Browse Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <!-- Search Bar and Product Grid/List -->
+        <div class="row mb-4">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Search for products...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Filters -->
+                <div class="filters">
+                    <h5>Filters</h5>
+                    <form>
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select class="form-control" id="category">
+                                <option>All</option>
+                                <option>Fruits</option>
+                                <option>Vegetables</option>
+                                <option>Dairy</option>
+                                <option>Meat</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="priceRange">Price Range</label>
+                            <input type="range" class="form-control" id="priceRange" min="0" max="100">
+                            <small class="form-text text-muted">Range: $0 - $100</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="rating">Rating</label>
+                            <select class="form-control" id="rating">
+                                <option>All</option>
+                                <option>1 star & up</option>
+                                <option>2 stars & up</option>
+                                <option>3 stars & up</option>
+                                <option>4 stars & up</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Apply Filters</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <!-- Product Grid/List -->
+                <div class="row">
+                    <!-- Product Card Example -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="image/tomatoes3.jpg" class="card-img-top" alt="Tomatoes">
+                            <div class="card-body">
+                                <h5 class="card-title">Tomatoes</h5>
+                                <p class="card-text">$10.00</p>
+                                <p class="card-text">Rating: ★★★★☆</p>
+                                <a href="productinfo.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat Product Card for other products -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="image/bananas.jpg" class="card-img-top" alt="Product 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Bananas</h5>
+                                <p class="card-text">$10.00</p>
+                                <p class="card-text">Rating: ★★★★☆</p>
+                                <a href="productinfo.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="image/vegetables.jpg" class="card-img-top" alt="Product 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Vegetables</h5>
+                                <p class="card-text">$15.00</p>
+                                <p class="card-text">Rating: ★★★★☆</p>
+                                <a href="productinfo.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="image/beef.jpg" class="card-img-top" alt="Product 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Beef</h5>
+                                <p class="card-text">$20.00</p>
+                                <p class="card-text">Rating: ★★★★☆</p>
+                                <a href="productinfo.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="image/onion.jpg" class="card-img-top" alt="Product 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Onion</h5>
+                                <p class="card-text">$25.00</p>
+                                <p class="card-text">Rating: ★★★★☆</p>
+                                <a href="productinfo.html" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+    </div> 
+                           <!-- Pagination -->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+          
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Farm2Table. All rights reserved.</p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
